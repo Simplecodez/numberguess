@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+
+</head>
+<body>
+	<header class="header-bar mb-3">
+		<h2 id="welcome">Welcome to numberGuess</h2>
+		<h5>Playing with numbers is fun, Wannah try? hit the start button</h5>
+		<div class="text-muted"><form action="#" id="toggle"><button  onclick="help('helped')">Need help?</button></form>
+			<div id="helped" class="erros"></div>
+		</div>
+		<span id="timer"></span>
+	</header>
+	<h4>This is not a guess game as you suppose, enter four numbers</h4>
+	<a href="#" onclick="start()" style="text-decoration: none;">Start</a>
+<div id="container">
+	<script src="seeUs.js"></script>
+<form action="#" >
+	<input type="text" id="numbera" onkeyup="cleanUp(this)" maxlength="1" class="input-darke" autofocus>
+	<input type="text" id="numberb" onkeyup="cleanUp(this)"  maxlength="1" class="input-darke">
+	<input type="text" id="numberc" onkeyup="cleanUp(this)"  maxlength="1" class="input-darke">
+	<input type="text" id="numberd" onkeyup="cleanUp(this)"  maxlength="1" class="input-darke">
+	<button onclick="guess('crossCheck');"  class="delete-post-button">Check</button>
+</form>
+</div>
+<span id="crossCheck"></span>
+
+</body>
+</html>
+<script type="text/javascript"></script>
